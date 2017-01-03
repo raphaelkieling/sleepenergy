@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<!-- CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Lobster|Pacifico" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">	
+
+	<title>Sleep NO!</title>
+</head>
+	<div class="jumbotron">
+		<div class="container">
+			<div class="jumbotron-title"><h1>SLEEP! energy</h1></div>
+			90 minutos é o suficiente para acordar bem
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-5">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h1 class="panel-title">Que horas pretende acordar?</h1>
+					</div>
+					<div class="panel-body">
+						<div class="row">
+							<div class="col-md-6">
+								<label for="hora">Hora</label>
+								<select name="hora" id="hora" class="form-control">				
+									<option value="1" class="">1</option>
+									<option value="5" class="">5</option>
+									<option value="6" class="">6</option>
+									<option value="7" class="">7</option>
+									<option value="8" class="">8</option>
+									<option value="9" class="">9</option>
+									<option value="10" class="">10</option>
+									<option value="11" class="">11</option>
+									<option value="12" class="">12</option>
+									<option value="13" class="">13</option>
+									<option value="14" class="">14</option>
+									<option value="15" class="">15</option>
+									<option value="16" class="">16</option>
+									<option value="17" class="">17</option>
+									<option value="18" class="">18</option>
+									<option value="19" class="">19</option>
+									<option value="20" class="">20</option>
+									<option value="21" class="">21</option>
+									<option value="22" class="">22</option>
+									<option value="23" class="">23</option>
+									<option value="00" class="">00</option>
+								</select>
+							</div>
+							<div class="col-md-6">
+								<label for="minuto">Minutos</label>
+								<select name="minuto" id="minuto" class="form-control">
+									<option value="00">00</option>
+									<option value="5">5</option>
+									<option value="10">10</option>
+									<option value="15">15</option>
+									<option value="20">20</option>
+									<option value="25">25</option>
+									<option value="30">30</option>
+									<option value="35">35</option>
+									<option value="40">40</option>
+									<option value="45">45</option>
+									<option value="50">50</option>
+									<option value="55">55</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="panel-footer">
+						<a  href="#panel-acordar" class="btn btn-success form-control" onclick="verificar();">Verificar</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-7">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h1 class="panel-title" id="panel-acordar">Horas que deve acordar!</h1>
+					</div>
+					<div class="panel-body">
+						<div class="alert alert-info">Lembre-se que o horário é que você deve dormir e não que se deitará. Um adulto normal demora em média 14 minutos para dormir.</div>
+						<div class="table-responsive">
+							<table class="table">
+								<tr>
+									<td id="c6"><span class="label label-danger" >Ciclo de 6 * 90 minutos</span></td>
+									<td id="c5"><span class="label label-danger" >Ciclo de 5 * 90 minutos</span></td>
+								</tr>
+								<tr>
+									<td id="c4"><span class="label label-danger" >Ciclo de 4 * 90 minutos</span></td>
+									<td id="c3"><span class="label label-danger" >Ciclo de 3 * 90 minutos</span></td>
+								</tr>
+								<tr>
+									<td id="c2" colspan="2"><span class="label label-danger" >Ciclo de 2 * 90 minutos</span></td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="about col-md-12">
+					<p>
+						<div class="title-font"><h2>Porque usar?</h2></div>
+
+						Para programar um boa noite de sono deve-se calcular quantos ciclos de 90 minutos se tem de dormir para despertar no momento em que o último ciclo terminar e, assim, acordar sem sono, com energia e boa disposição. 
+						<br>
+						Na maioria das vezes, os adultos precisam de 4 a 6 ciclos de sono de 90 minutos para recuperar a energia, o que corresponde a dormir entre 6 a 9 horas por noite.
+						<br>
+
+						<div class="title-font"><h2>Como usar?</h2></div>
+						<div class="container-fluid">
+							<ol>
+								<li>Escolha qual hora quer acordar.</li>
+								<li>Aperte no botão verde.</li>
+								<li>Escolha que horário quer dormir nas opções disponíveis</li>
+								<li>Durma no HORÁRIO. Nem 10 minutos antes ou depois. Para ter um aproveitamento total dos 90 minutos</li>
+							</ol>
+						</div>
+					</p>
+				</div>
+		</div>
+	</div>
+	<!-- Scripts -->
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/moment.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

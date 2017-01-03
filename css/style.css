@@ -1,0 +1,36 @@
+*{
+	margin:0px;
+	padding: 0px;
+}
+body{
+	background-image: url(../img/asahona.png);
+}
+.container{
+	max-width: 960px !important;
+}
+.jumbotron{
+	color: white !important;
+	background-image: url(../img/escheresque_ste.png) !important;
+	border-color: black !important;
+}
+.jumbotron-title{
+	font-family: 'Pacifico', cursive !important;
+}
+.title-font{
+	font-family: 'Lobster', cursive !important;
+}
+.panel , .alert,.alert-info{
+	border-radius:0px !important;
+}
+.panel-heading {
+	background:#353638 !important;
+	color:white !important;
+	font-family: 'Lobster', cursive !important;
+}
+.about{
+	background: white;
+	padding: 10px 30px 10px 30px;
+	border-radius: 2px;
+	margin-bottom: 10px;
+	box-shadow: 0 0 5px rgba(0,0,0,0.2)
+}
